@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    Result in ejs templating system:
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>Ime</td>
+            <td>Prezime</td>
+        </tr>
+     
+
+        <% for(var i=0; i<REZULTAT.length; i++) {%>
+            <tr>
+                <td>
+                    <%= REZULTAT[i].idfrizera %>
+                </td>
+                <td>
+                    <%= REZULTAT[i].Ime %>
+                </td>
+                <td>
+                    <%= REZULTAT[i].Prezime %>
+                </td>
+            </tr>
+            <% } %>
+
+    </table>
+
+</body>
+
+</html>
